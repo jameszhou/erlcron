@@ -3,6 +3,7 @@
 {once, {3, 30, 12}}  % 3:30:12执行
 {once, {3, 30, 12,pm}} % 3:30:12执行
 {once, {3, 30,pm}} % 3:30:00执行
+{{daily, [{1, 10, am}, {1, 07, 30, am}]}, %% 这种有2个时间点的，无需考虑先后顺序，会自动调整，所有执行的时间会转换为S来确定执行顺序
 
 Erlcron provides testable cronish like functionality for Erlang
 systems, with the ability to arbitrarily set the time and place along
